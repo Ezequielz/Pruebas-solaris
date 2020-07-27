@@ -1,9 +1,12 @@
 *{
     box-sizing: border-box;
     margin: 0 auto;
+
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/fondo/9bc98f55db5737c6b9601ea215f14467.jpg");
+
 }
 /* generales */
 a{
@@ -47,7 +50,7 @@ li{
  width: 325px;
     
 }
-/* MENU CENTRAL */
+/* BARRA MENU */
 .links{
     margin-left: 250px;
 }
@@ -87,9 +90,95 @@ li{
 }
 /* BANNER */
 .banner{
-    position: absolute;
+    display: block;
+    position: relative;
+    bottom: 125px;
     z-index: -1;
 }
 .banner img{
     width: 100%;
+ 
 }
+/* MAIN NOVEDADES*/
+.contenedor-main{
+    margin-top: -100px;
+    background-color: rgba(139, 137, 137, 0.37);
+}
+.contenedor-main h2, p{
+    text-align: center;
+}
+.contenedor-main .titulo{
+    color: white;
+    border-top: 2px solid black;
+    text-align: left;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: rgba(17, 16, 16, 0.57);
+}
+.novedades{
+    overflow: hidden;
+    margin-top: 30px;
+}
+.product{
+    float: left;
+    margin: 5px 2% 30px 2%;
+    width: 20%;
+}
+.photo{
+    display: block;
+    text-align: center;
+    height: 40vh;
+}
+.photo:active{
+    border: 5px solid red;
+}
+
+/* MAIN OFERTAS */
+.ofertas{
+    overflow: hidden;
+    margin-top: 10vh;
+}
+.productOferta{
+    float: left;
+    margin: 5px 1% 30px 2%;
+    width: 14%;
+}
+.productOferta:last-child{
+    margin-right: 0%;
+}
+.productOferta:first-child{
+    margin-left: 0%;
+}
+.photo2{
+    display: block;
+    text-align: center;
+    height: 20vh;
+    padding: 5px;
+}
+.photo2:active{
+    border-color: 5px solid red;
+}
+/* Footer */
+.main-footer{
+    text-align: center;
+
+    padding: 40px 0;
+}
+.main-footer li{
+    display: inline;
+    padding: 0 10px;
+    border-right: 1px solid white;
+}
+.main-footer li:last-child{
+    border-right: 0px;
+}
+.main-footer a{
+    text-transform: capitalize;
+    font-size: 20px;
+    color: white;
+}
+.main-footer a:hover{
+    font-size: 25px;
+    color: red;
+}
+
